@@ -11,7 +11,7 @@ const roboto = Roboto({
 
 export const metadata = {
   title: 'HwgoTv',
-  description: 'Tudo sobre games!',
+  description: 'Tudo sobre Diablo4!',
 }
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={roboto.className}>
+      <body className={`${roboto.className} bg-dark-300`}>
         <Navbar />
         {children}
       </body>
