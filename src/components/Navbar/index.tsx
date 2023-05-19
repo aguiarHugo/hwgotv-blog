@@ -6,7 +6,6 @@ import Image from "next/image"
 import { Menu, X } from "lucide-react"
 
 import logo from "@/assets/hwgotv.png"
-import twitchLogo from "@/assets/twitchlogo.png"
 import d4logo from "@/assets/d4logo.png"
 import Link from "next/link"
 
@@ -16,8 +15,8 @@ const Navbar = () => {
   const isAboveSmallScreens = useMediaQuery("(min-width: 768px)")
 
   return (
-    <header className="fixed top-0 w-full bg-dark-300 border-b-2 border-solid border-dark-400">
-      <nav className="flex items-center justify-between px-12 pb-1">
+    <header className="fixed z-40 top-0 w-full bg-dark-300 border-b-2 border-solid border-dark-400">
+      <nav className="flex items-center justify-between h-[100px] px-12 pb-1">
         <a 
           onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} 
           className="hover:cursor-pointer">
@@ -32,13 +31,9 @@ const Navbar = () => {
         {isAboveSmallScreens ? (
         <>
           <div className="flex items-center flex-col">
-            <Image
-                className="w-16 h-16 mt-4"
-                src={d4logo}
-                alt="HwgoTv"
-              />
             <div className="flex gap-16">
-              <Link href="" className="hover:border-b hover:border-purple-300 hover:text-dark-100">News</Link>
+              <Link href="/" className="hover:border-b hover:border-purple-300 hover:text-dark-100">Home</Link>
+              <Link href="/news" className="hover:border-b hover:border-purple-300 hover:text-dark-100">News</Link>
               <Link href="" className="hover:border-b hover:border-purple-300 hover:text-dark-100">Builds</Link>
               <Link href="" className="hover:border-b hover:border-purple-300 hover:text-dark-100">Patch Notes</Link>
               <Link href="https://www.twitch.tv/hwgotv" className="hover:border-b hover:border-purple-300 hover:text-dark-100" target="_blank">Twitch</Link>          
@@ -47,8 +42,8 @@ const Navbar = () => {
             <Link href="https://www.twitch.tv/hwgotv" target="_blank">
               <Image
                 className="w-16 h-16"
-                src={twitchLogo}
-                alt="HwgoTv"
+                src={d4logo}
+                alt="Diablo 4"
               />
             </Link>
           </>
