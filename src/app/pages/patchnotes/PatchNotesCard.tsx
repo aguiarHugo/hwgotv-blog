@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import Image  from 'next/image';
+
+import news1 from '/public/news1.jpg'
 
 type PatchNote = {
   title: string;
@@ -16,13 +19,19 @@ const PatchNotesCard: React.FC<Props> = ({ patch }) => {
 
   return (
     <Link 
-      className='flex flex-col justify-between gap-4 h-[360px] w-[230px] duration-300 hover:opacity-70
-      border-2 bg-dark-400 border-patchnotes-100 rounded-lg'
+      className='flex flex-col justify-between gap-2 h-[360px] w-[230px] duration-300 hover:opacity-70
+      border-2 border-patchnotes-100 rounded-lg relative'
       href={url} 
       target='_blank'
     >
-      <h2 className='bg-patchnotes-100 text-center font-bold uppercase rounded-t-md py-2 items-center'>{title}</h2>
-      <p className='mx-1'>{snippet}</p>
+      <Image
+        className='absolute z-[-10] top-16 h-[290px] opacity-50 rounded-md'
+        src={news1}
+        alt={title}
+      />
+      <div className='flex justify-center bg-patchnotes-100  rounded-t-md h-16'>
+        <h2 className='flex items-center text-center font-bold uppercase '>{title}</h2>
+      </div>      <p className='mx-1'>{snippet}</p>
       <span className='text-end text-[14px] text-dark-200 mx-1'>{date}</span>
     </Link>
   );
