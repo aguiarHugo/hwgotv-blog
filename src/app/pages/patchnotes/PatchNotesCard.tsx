@@ -16,7 +16,7 @@ const PatchNotesCard: React.FC<Props> = ({ patch }) => {
 
   return (
     <Link 
-      className='flex flex-col justify-between gap-4 h-[300px] w-[200px] duration-300 hover:opacity-70
+      className='flex flex-col justify-between gap-4 h-[360px] w-[230px] duration-300 hover:opacity-70
       border-2 bg-dark-400 border-patchnotes-100 rounded-lg'
       href={url} 
       target='_blank'

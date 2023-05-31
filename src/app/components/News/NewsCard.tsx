@@ -16,7 +16,7 @@ const NewsCard: React.FC<Props> = ({ patch }) => {
 
   return (
     <Link 
-      className='flex flex-col justify-between gap-2 h-[340px] w-[230px] duration-300 hover:opacity-70
+      className='flex flex-col justify-between gap-2 h-[360px] w-[230px] duration-300 hover:opacity-70
       border-2 bg-dark-400 border-purple-300 rounded-lg'
       href={url} 
       target='_blank'
