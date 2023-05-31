@@ -20,14 +20,18 @@ module.exports = {
             300: "#9146FF",
             400: "#34235c"
           },
-          red: {
-            100: "#ad4b48"
+          patchnotes: {
+            100: "#F5C720"
           },
-          green: {
-            100: "#2C7A7B"
-          }
+          builds: {
+            100: "#8a0600"
+          },
         },
+        backgroundImage: (theme) => ({
+          "gradient-gradual":
+            "linear-gradient(180deg, rgba(116, 116, 116, 0) 66.15%, #000000 100%)",
+        }),
+      },
     },
-  },
   plugins: [],
 }

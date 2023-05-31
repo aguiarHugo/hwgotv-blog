@@ -1,12 +1,12 @@
 'use client'
 
 import { useState } from "react"
-import useMediaQuery from "@/hooks/useMediaQuery"
+import useMediaQuery from "../../../hooks/useMediaQuery"
 import Image from "next/image"
 import { Menu, X } from "lucide-react"
 
-import logo from "@/assets/hwgotv.png"
-import d4logo from "@/assets/d4logo.png"
+import logo from "../../../assets/hwgotv.png"
+import d4logo from "../../../assets/d4logo.png"
 import Link from "next/link"
 
 
@@ -33,10 +33,10 @@ const Navbar = () => {
           <div className="flex items-center flex-col">
             <div className="flex gap-16">
               <Link href="/" className="hover:border-b hover:border-purple-300 hover:text-dark-100">Home</Link>
-              <Link href="/news" className="hover:border-b hover:border-purple-300 hover:text-dark-100">News</Link>
-              <Link href="" className="hover:border-b hover:border-purple-300 hover:text-dark-100">Builds</Link>
-              <Link href="" className="hover:border-b hover:border-purple-300 hover:text-dark-100">Patch Notes</Link>
+              <Link href="/pages/builds" className="hover:border-b hover:border-purple-300 hover:text-dark-100">Builds</Link>
+              <Link href="/pages/patchnotes" className="hover:border-b hover:border-purple-300 hover:text-dark-100">Patch Notes</Link>
               <Link href="https://www.twitch.tv/hwgotv" className="hover:border-b hover:border-purple-300 hover:text-dark-100" target="_blank">Twitch</Link>          
+              <Link href="https://www.youtube.com/channel/UCEcByhnQsL6FMy1vPoqyW8A" className="hover:border-b hover:border-purple-300 hover:text-dark-100" target="_blank">Youtube</Link>          
             </div>
           </div>
             <Link href="https://www.twitch.tv/hwgotv" target="_blank">
@@ -64,12 +64,17 @@ const Navbar = () => {
 
         {/* MOBILE MODAL */}
         {!isAboveSmallScreens && isMenuToggled && (
-          <div className="fixed right-3 top-16 h-40 bg-purple-300 rounded-md px-4">
-            <div className="flex flex-col gap-4">
-              <Link href="" className="hover:border-b hover:border-purple-300 hover:text-dark-100">News</Link>
-              <Link href="" className="hover:border-b hover:border-purple-300 hover:text-dark-100">Builds</Link>
-              <Link href="" className="hover:border-b hover:border-purple-300 hover:text-dark-100">Patch Notes</Link>
-              <Link href="https://www.twitch.tv/hwgotv" className="hover:border-b hover:border-purple-300 hover:text-dark-100" target="_blank">Twitch</Link>          
+          <div className="fixed right-3 top-[4.4rem] h-80 bg-dark-400 rounded-md px-4">
+            <div className="flex flex-col mt-6 gap-4 text-center">
+              <Link href="/" className="hover:border-b hover:border-purple-300 hover:text-dark-100">Home</Link>
+              <hr />
+              <Link href="/pages/builds" className="hover:border-b hover:border-purple-300 hover:text-dark-100">Builds</Link>
+              <hr />
+              <Link href="/pages/patchnotes" className="hover:border-b hover:border-purple-300 hover:text-dark-100">Patch Notes</Link>
+              <hr />
+              <Link href="https://www.twitch.tv/hwgotv" className="hover:border-b hover:border-purple-300 hover:text-dark-100" target="_blank">Twitch</Link>
+              <hr /> 
+              <Link href="https://www.youtube.com/channel/UCEcByhnQsL6FMy1vPoqyW8A" className="hover:border-b hover:border-purple-300 hover:text-dark-100" target="_blank">Youtube</Link>                   
             </div>
           </div>
         )}
