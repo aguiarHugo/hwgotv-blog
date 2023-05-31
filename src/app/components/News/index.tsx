@@ -12,7 +12,7 @@ const News: React.FC<Props> = () => {
            News
           </h4>
         </div>
-        <div className="flex flex-wrap justify-center sm:justify-between gap-2 sm:gap-8">
+        <div className="flex flex-wrap justify-center sm:justify-around md:justify-between gap-2 sm:gap-8">
           {newsContent.map((patch, index) => (
             <NewsCard key={index} patch={patch} />
           ))}
