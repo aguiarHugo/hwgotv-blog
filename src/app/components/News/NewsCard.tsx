@@ -1,5 +1,6 @@
 import Image  from 'next/image';
 import Link from 'next/link';
+
 import news1 from '/public/news1.jpg'
 
 type News = {

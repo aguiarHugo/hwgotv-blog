@@ -1,9 +1,10 @@
+
 export const newsContent = [
   {
     title: 'DIABLO IV SERÁ LANÇADO EM BREVE',
     url: 'https://news.blizzard.com/pt-br/diablo4/23954935/diablo-iv-sera-lancado-em-breve-tudo-o-que-voce-precisa-saber',
     date: '25 de maio de 2023',
-    snippet: 'Santuário precisa de salvação. Você atenderá ao chamado quando os portões do Inferno se abrirem em 6 de junho? Lilith voltou a Santuário, evocada por um ritual sombrio. Antes de assumir o papel de Bárbaro, Druida, Necromante, Renegado ou Mago para atravessar as cinco enormes áreas de Diablo IV e desfazer a agonia causada por Lilith no mundo que ela ajudou a criar.'
+    snippet: 'Santuário precisa de salvação. Você atenderá ao chamado quando os portões do Inferno se abrirem em 6 de junho? Lilith voltou a Santuário, evocada por um ritual sombrio. Antes de assumir o papel de Bárbaro, Druida, Necromante, Renegado ou Mago para atravessar as cinco enormes áreas de Diablo IV e desfazer a agonia causada por Lilith no mundo que ela ajudou a criar.',
   },
   {
     title: 'DROPS DA TWITCH NO LANÇAMENTO',
@@ -15,7 +16,7 @@ export const newsContent = [
     title: 'COMBATENDO DEMÔNIOS COM ACESSIBILIDADE',
     url: 'https://news.blizzard.com/pt-br/diablo4/23954932/combatendo-demonios-com-acessibilidade-em-diablo-iv',
     date: '18 de maio de 2023',
-    snippet: 'A equipe percebeu a oportunidade de aprimorar os recursos de acessibilidade do jogo e esforçou-se para garantir que cada novo recurso derrubaria obstáculos que impediam pessoas de jogar. Essa ideia guiou a equipe durante todo o desenvolvimento.'
+    snippet: 'A equipe percebeu a oportunidade de aprimorar os recursos de acessibilidade do jogo e esforçou-se para garantir que cada novo recurso derrubaria obstáculos que impediam pessoas de jogar. Essa ideia guiou a equipe durante todo o desenvolvimento.',
   },
   {
     title: 'DESCUBRA OS HORRORES INFERNAIS',
